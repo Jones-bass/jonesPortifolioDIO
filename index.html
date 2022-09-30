@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="/css/acordeon.css" />
     <link rel="stylesheet" href="/css/languages.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/experience.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
   </head>
 
   <body>
@@ -45,13 +47,54 @@
             <a href="tel:(79) 9 9959-1921">(79) 9 9959-1921</a>
           </p>
           <p class="email">
-            <a href="mailto:jonesbass.tb@gmail.com">jonesbass.tb@mail.com
+            <a href="mailto:jonesbass.tb@gmail.com">
+              jonesbass.tb@mail.com"></a>
            </p>
+
+
         </div>
       </header>
 
       <section class="acordeon open">
-        <button class="trigger" type="button">Indioma</button>
+        <button class="trigger" type="button">
+            <h2>Skills</h2>
+        </button>
+
+        <div class="content">
+            <div class="skills">
+                <section class="tools">
+                    <h3>Ferramentas:</h3>
+                    <ul>
+                        <li>
+                            <img src="/img/icons/tools/nodejs.svg" alt="Nodejs" title="Nodejs">
+                        </li>
+                        <li>
+                            <img src="/img/icons/tools/react.svg" alt="React" title="React">
+                        </li>
+                        <li>
+                            <img src="/img/icons/tools/git.svg" alt="GIT" title="GIT">
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="personal">
+                    <h3>Pessoal:</h3>
+                    <ul>
+                        <li>Liderança</li>
+                        <li>Facilidade de comunicação</li>
+                        <li>Organização</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Flexibilidade</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+      <section class="acordeon open">
+        <button class="trigger" type="button">
+          <h2>Idiomas</h2>
+        </button>
 
         <div class="content">
           <ul class="languages">
@@ -64,25 +107,57 @@
       </section>
 
       <section class="acordeon open">
-        <button class="trigger" type="button">Portifólio</button>
+        <button class="trigger" type="button">
+           <h2>Portfólio</h2>
+        </button>
 
         <div class="content">
           <ul class="portfolio">
             <li>
-              <span class="title github">Criando um app de lembrete</span>
+              <h3 class="title github">Criando um app de lembrete</h3>
               <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
             </li>
             <li>
-              <span class="title github">Criando um app de lembrete</span>
+              <h3 class="title github">Criando um app de lembrete</h3>
               <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
             </li>
             <li>
-              <span class="title github">Criando um app de lembrete</span>
+              <h3 class="title github">Criando um app de lembrete</h3>
               <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">
+            <h2>Experiência Profissional</h2>
+        </button>
+
+        <div class="content">
+            <ul class="experience">
+                <li>
+                    <h3 class="title">Front-end Developer / dio.me</h3>
+                    <p class="period">Jan 2020 - Current</p>
+                    <p>
+                        Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                        reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                        iste.
+                    </p>
+                </li>
+
+                <li>
+                    <h3 class="title">Front-end Developer / dio.me</h3>
+                    <p class="period">Jan 2020 - Current</p>
+                    <p>
+                        Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                        reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
+                        iste.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
     </main>
 
     <script src="./js/acordeon.js"></script>
