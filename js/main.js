@@ -48,8 +48,7 @@ function updatelanguages(profileData) {
 function updatePortfolio(profileData) {
   const portfolio = document.getElementById("profile.portfolio");
   portfolio.innerHTML = profileData.portfolio
-    .map(
-      (portfolio) => `<li><h3 class="title github">${portfolio.name}</h3>
+    .map((portfolio) => `<li><h3 class="title github">${portfolio.name}</h3>
         <a href="${portfolio.url}" target="_blank">${portfolio.url}</a></li>`
     )
     .join("");
@@ -59,7 +58,8 @@ function updateCourse(profileData) {
   const course = document.getElementById("profile.course");
   course.innerHTML = profileData.course
     .map((course) => `<li><h3 class="title">${course.name}</h3>
-    <p class="period">${course.period}</p></li>`).join("");
+    <p class="period">${course.period}</p></li>`
+    ).join("");
 }
 
 (async () => {
