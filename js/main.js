@@ -68,11 +68,11 @@ function updateCourse(profileData) {
     ).join("");
 }
 
-function updateExpirence(profileData) {
-  const course = document.getElementById("experience.course");
-  course.innerHTML = profileData.course
-    .map((course) => `<li><h3 class="title">${course.name}</h3>
-    <p class="period">${course.period}</p><p class="period">${course.office}</p></li>`
+function updateExperience(profileData) {
+  const experience = document.getElementById("experience.course");
+  experience.innerHTML = profileData.experience
+    .map((experience) => `<li><h3 class="title">${experience.name}</h3>
+    <p class="period">${experience.period}</p><p class="period">${experience.office}</p></li>`
     ).join("");
 }
 
