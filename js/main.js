@@ -68,6 +68,14 @@ function updateCourse(profileData) {
     ).join("");
 }
 
+function updateExpirence(profileData) {
+  const course = document.getElementById("experience.course");
+  course.innerHTML = profileData.course
+    .map((course) => `<li><h3 class="title">${course.name}</h3>
+    <p class="period">${course.period}</p><p class="period">${course.office}</p></li>`
+    ).join("");
+}
+
 (async () => {
   const profileData = await fetchProfileData();
   updateProfileInfo(profileData);
@@ -76,4 +84,5 @@ function updateCourse(profileData) {
   updatelanguages(profileData);
   updatePortfolio(profileData);
   updateCourse(profileData);
+  updateExpirence(profileData);
 })();
