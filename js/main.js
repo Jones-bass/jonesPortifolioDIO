@@ -69,7 +69,7 @@ function updateCourse(profileData) {
 }
 
 function updateExperience(profileData) {
-  const experience = document.getElementById("experience.course");
+  const experience = document.getElementById("profile.experience");
   experience.innerHTML = profileData.experience
     .map((experience) => `<li><h3 class="title">${experience.name}</h3>
     <p class="period">${experience.period}</p><p class="period">${experience.office}</p></li>`
